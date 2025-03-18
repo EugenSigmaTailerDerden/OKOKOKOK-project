@@ -15,6 +15,7 @@ Console.WriteLine("10. Save data");
 Console.WriteLine("11. Exit");
 
 Student st = new();
+Subject sub = new();
 
 while (true)
 {
@@ -32,7 +33,7 @@ while (true)
             st.LastName = Console.ReadLine();
             Console.Write("Enter Student Class: ");
             st.Class = Console.ReadLine();
-           
+
             break;
         case 2:
             Console.WriteLine("------- Student ---------");
@@ -42,7 +43,7 @@ while (true)
             break;
     }
 
-
+}
 
 
 public class Student
