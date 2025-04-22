@@ -1,3 +1,5 @@
+using okokokokoko;
+
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 Console.WriteLine("Darova eta Класний журнал");
@@ -13,31 +15,33 @@ Console.WriteLine("8. Edit grade");
 Console.WriteLine("9. Calculate GPA");
 Console.WriteLine("10. Save data");
 Console.WriteLine("11. Exit");
+ 
 
-
-List<Subject> Subjects = new();
+Jurnal j = new();
 
 while (true)
 {
     Console.Write("Your choice: ");
     int choice = Convert.ToInt32(Console.ReadLine());
 
-    switch (choice)
+    switch (choice) 
     {
         case 11:
             Environment.Exit(0);
             break;
 
         case 1:
+
+            j.Addstudent(); 
            
             break;
 
         case 2:
-           
+            j.Editstudent();
             break;
 
         case 3:
-           
+            j.Deletestudent();
             break;
     }
 }
