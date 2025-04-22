@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace okokokokoko
 {
-    internal class jurnal
+    internal class Jurnal
     {
         List<Student> students = new();
         public void Addstudent()
         {
-             Student st = new Student();
-        Console.Write("Enter Student FirstName: ");
+            Student st = new Student();
+            Console.Write("Enter Student FirstName: ");
             st.FirstName = Console.ReadLine();
             Console.Write("Enter Student Age: ");
             st.Age = Convert.ToInt32(Console.ReadLine());
@@ -60,9 +60,9 @@ namespace okokokokoko
             students.RemoveAt(numToDelete);
             Console.WriteLine("Student deleted successfully!");
         }
-    }   
+    }
 }
-    
-    
-    
-    
+
+
+
+
